@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		Редактирование данных
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header header-room" id="header">
+		<div class="wrapper wrapper-room">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-lg-11">
+							<a href="index.html" class="header__logo header__logo-room">
+								<img src="img/logo-text.png" alt="">
+								<img src="img/logo1.png" alt="">
+							</a>
+							<a href="list_of_hotels.html" class="divide__hotels divide__hotels-room">
+								Гостиницы
+							</a>
+							<span class="stick-room">
+								<i class="fas fa-circle"></i>
+							</span>
+							<a href="list_of_services.html" class="divide__services divide__services-room">
+								Услуги
+							</a>
+						</div>
+						<div class="col-md-2 col-lg-1">
+							<a href="room.html" class="header__icon-user">
+								<img src="img/header-man.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<section class="edit">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+						<form action="#" class="edit__form_first">
+							<div class="edit__buttons">
+								<button class="edit__button btn">
+									Добавить
+								</button>
+								<button class="edit__button btn">
+									Удалить
+								</button>
+							</div>
+							<div class="edit__inputs">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+								<input type="text" class="edit__input">
+							</div>	
+						</form>
+					</div>
+					<div class="offset-md-1 col-md-7">
+						<form action="#" class="edit__form_second" id="edit__form_second">
+							<input type="text" class="edit__input" placeholder="Название">
+							<textarea type="text" placeholder="Краткое описание" class="edit__input edit__textarea"></textarea>
+							<input type="text" class="edit__input" placeholder="Колличество комнат в номере">
+							<input type="text" class="edit__input" placeholder="Общее число посетителей">
+							<input type="text" class="edit__input" placeholder="Колличество номеров в отеле">
+							<input type="text" class="edit__input" placeholder="Цена за ночь">
+							<input type="text" class="edit__input" placeholder="Место расположения">
+							<input type="text" class="edit__input" placeholder="Наличие лифта">
+							<input type="text" class="edit__input" placeholder="Питание">
+							<input type="text" class="edit__input"
+							placeholder="Домашние питомцы">
+							<div class="edit-block__select">
+								<select name="select" id="additionally" class="edit__input edit__select" placeholder="Дополнительные услуги">
+									<option value="1" selected>
+										Дополнительные услуги
+									</option>
+									<option value="1">
+										что-то
+									</option>
+									<option value="1">
+										что-то
+									</option>
+								</select>
+							</div>
+							<label class="label__file btn">
+							    <input type="file" id="formImage">
+							    Загрузить картинку
+							</label>
+							<div id="formPreview" class="file__preview"></div>
+							<button class="button__save btn">
+								Сохранить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+	<footer class="footer footer-list" id="footer-room">
+		<div class="footer__wrapper-room">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-12">
+						<div class="wrapper footer__wrapper">
+							<a href="index.html" class="header__logo footer__logo-list">
+								<img src="img/logo-text.png" alt="">
+								<img src="img/logo1.png" alt="">
+							</a>
+							<a href="#" class="footer__confidence footer__confidence-list">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="css/fontawesome-free-5.15.1-web/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
