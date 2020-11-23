@@ -1,0 +1,29 @@
+﻿@model BookingHotels.Domain.Entities.Hotel
+
+    <div class="list-hotels__wrapper">
+        @if (Model.ImageData != null)
+        {
+            <a href="description_of_hotel.html">
+                <img src="@Url.Action("GetImage", "Hotel",
+                new { Model.HotelId })" alt="" class="list-hotels__img">
+            </a>
+        }
+        else
+        {
+            <a href="description_of_hotel.html">
+                <img src="~/img/list-img1.jpg" alt="" class="list-hotels__img">
+            </a>
+        }
+
+        <div class="list-hotels__text hotels__text">
+            <p class="list-hotels__title hotels__title">
+                <a href="description_of_hotel.html">
+                    @Model.Name
+                </a>
+                <span class="list-hotels__cost hotels__cost">
+                    @Model.Price.ToString("# руб")
+                </span>
+            </p>
+            @Model.Description
+        </div>
+    </div>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		Список гостиниц
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header header-room" id="header">
+		<div class="wrapper wrapper-room">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-lg-11">
+							<a href="index.html" class="header__logo header__logo-room">
+								<img src="img/logo-text.png" alt="">
+								<img src="img/logo1.png" alt="">
+							</a>
+							<a href="list_of_hotels.html" class="divide__hotels divide__hotels-room">
+								Гостиницы
+							</a>
+							<span class="stick-room">
+								<i class="fas fa-circle"></i>
+							</span>
+							<a href="list_of_services.html" class="divide__services divide__services-room">
+								Услуги
+							</a>
+						</div>
+						<div class="col-md-2 col-lg-1">
+							<a href="room.html" class="header__icon-user">
+								<img src="img/header-man.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<section class="list" id="list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 padding-right-none">
+					<form action="#" class="form__list-hotels">
+						<div class="list-hotels__block">
+							<p class="list__paragraph">
+								Цена, б.р.
+							</p>
+							<div class="list-hotels__cont">
+								<label for="list-hotels__number_min">
+									От
+								</label>
+								<input id="list-hotels__number_min" type="number" class="list-hotels__item edit__input">
+								<label for="list-hotels__number_max">
+									До
+								</label>
+								<input id="list-hotels__number_max" type="number" class="list-hotels__item edit__input">
+							</div>
+						</div>
+						<div class="list-hotels__block">
+							<p class="list__paragraph">
+								Дата заезда/выезда
+							</p>
+							<div class="list-hotels__cont">
+								<label for="list-hotels__date_min">
+									С
+								</label>
+								<input data-provide="datepicker" id="list-hotels__date_min" class="list-hotels__item edit__input">
+								<label for="list-hotels__date_max">
+									по
+								</label>
+								<input data-provide="datepicker" id="list-hotels__date_max" class="list-hotels__item edit__input">
+							</div>
+							<p class="list__paragraph">
+								Дата заезда/выезда
+							</p>
+						</div>
+							<div class="list-hotels-block__checkboxes">
+								<div class="list-hotels__checkboxes">
+									<input id="sweden" name="country" type="checkbox" class="list__country">
+									<label for="sweden">
+										Швеция
+									</label>
+									<input id="russian" name="country" type="checkbox" class="list__country">
+									<label for="russian">
+										Россия
+									</label>
+									<input id="ukraine" name="country" type="checkbox" class="list__country">
+									<label for="ukraine">
+										Украина
+									</label>
+									<input id="germany" name="country" type="checkbox" class="list__country">
+									<label for="germany">
+										Германия
+									</label>
+									<input id="spain" name="country" type="checkbox" class="list__country">
+									<label for="spain">
+										Испания
+									</label>
+									<input id="italy" name="country" type="checkbox" class="list__country">
+									<label for="italy">
+										Италия
+									</label>
+								</div>
+								<div class="list-hotels__checkboxes">
+									<input id="romania" name="country" type="checkbox" class="list__country">
+									<label for="romania">
+										Румыния
+									</label>
+									<input id="poland" name="country" type="checkbox" class="list__country">
+									<label for="poland">
+										Польша
+									</label>
+									<input id="latvia" name="country" type="checkbox" class="list__country">
+									<label for="latvia">
+										Латвия
+									</label>
+									<input id="bulgaria" name="country" type="checkbox" class="list__country">
+									<label for="bulgaria">
+										Болгария
+									</label>
+									<input id="czech" name="country" type="checkbox" class="list__country">
+									<label for="czech">
+										Чехия
+									</label>
+									<input id="lithuania" name="country" type="checkbox" class="list__country">
+									<label for="lithuania">
+										Литва
+									</label>
+								</div>
+							</div>
+							<div class="list-hotels__block">
+								<p class="list__paragraph">
+									Колличество комнат
+								</p>
+								<div class="list-hotels__cont">
+									<label for="list-hotels__room_min">
+										От
+									</label>
+									<input id="list-hotels__room_min" type="number" class="list-hotels__item edit__input">
+									<label for="list-hotels__room_max">
+										До
+									</label>
+									<input id="list-hotels__room_max" type="number" class="list-hotels__item edit__input">
+								</div>
+							</div>
+							<p class="list__paragraph">
+								Дополнительные услуги
+							</p>
+							<div class="list-hotels-block__checkboxes list-hotels-block__checkboxes_second">
+								<div class="list-hotels__checkboxes list-hotels__checkboxes_third">
+									<input id="free-breakfast" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="free-breakfast">
+										Бесплатные завтраки
+									</label>
+									<input id="pool" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="pool">
+										Бассейн
+									</label>
+									<input id="pets" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="pets">
+										Домашние питомцы
+									</label>
+									<input id="auditorium" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="auditorium">
+										Актовый зал
+									</label>
+									<input id="fitness" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="fitness">
+										Фитнес-зал
+									</label>
+									<input id="theatre" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="theatre">
+										Домашний кинотеатр
+									</label>
+								</div>
+								<div class="list-hotels__checkboxes">
+									<input id="sauna" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="sauna">
+										Сауна
+									</label>
+									<input id="brazier" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="brazier">
+										Мангал
+									</label>
+									<input id="golf" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="golf">
+										Поле для гольфа
+									</label>
+									<input id="bulgaria-second" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="bulgaria-second">
+										Болгария
+									</label>
+									<input id="massage" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="massage">
+										Массаж
+									</label>
+									<input id="atm" name="extra" type="checkbox" class="list__country list__extra">
+									<label for="atm">
+										Банкомат
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="list-hotels__button btn">
+								Применить
+							</button>
+						</form>
+					</div>
+					<div class="col-md-8 padding-left-none">
+						<a href="#" class="list-hotels__map">
+							Посмотреть месторасположение на карте
+						</a>
+						<div class="list-hotels__wrapper">
+							<a href="description_of_hotel.html">
+								<img src="img/list-img1.jpg" alt="" class="list-hotels__img">
+							</a>
+							<div class="list-hotels__text hotels__text">
+								<p class="list-hotels__title hotels__title">
+									<a href="description_of_hotel.html">
+										Отель "Дель Луна"
+									</a>
+								<span class="list-hotels__cost hotels__cost">
+									50 б.р.
+								</span>
+								</p>
+									Отель расположен на краю мира. В его стоимость 
+									входит бесплатный завтрак, посещение бассейна и тд.
+							</div>
+						</div>
+						<div class="list-hotels__wrapper">
+							<a href="description_of_hotel.html">
+								<img src="img/list-img2.jpg" alt="" class="list-hotels__img">
+							</a>
+							<div class="list-hotels__text hotels__text">
+								<p class="list-hotels__title hotels__title">
+									<a href="description_of_hotel.html">
+										Отель "Гравион"
+									</a>
+								<span class="list-hotels__cost hotels__cost">
+									56 б.р.
+								</span>
+								</p>
+									Отель расположен на западе севера. Повывав в нашем
+									чудесном отеле вы испробуете самые вкусные блюда
+									нашего шеф повара и побываете на известной 
+									достопримечательности города.
+							</div>
+						</div>
+						<div class="list-hotels__wrapper">
+							<a href="description_of_hotel.html">
+								<img src="img/list-img3.jpg" alt="" class="list-hotels__img">
+							</a>
+							<div class="list-hotels__text hotels__text">
+								<p class="list-hotels__title hotels__title">
+									<a href="description_of_hotel.html">
+										Отель "Demion"
+									</a>
+								<span class="list-hotels__cost hotels__cost">
+									70 б.р.
+								</span>
+								</p>
+									Отель расположен на краю мира. В его стоимость 
+									входит бесплатный завтрак, посещение бассейна и тд.
+							</div>
+						</div>
+						<div class="list-hotels__wrapper">
+							<a href="description_of_hotel.html">
+								<img src="img/list-img4.jpg" alt="" class="list-hotels__img">
+							</a>
+							<div class="list-hotels__text hotels__text">
+								<p class="list-hotels__title hotels__title">
+									<a href="description_of_hotel.html">
+										Отель "ColorDay"
+									</a>
+								<span class="list-hotels__cost hotels__cost">
+									43 б.р.
+								</span>
+								</p>
+									Отель расположен на краю мира. В его стоимость 
+									входит бесплатный завтрак, посещение бассейна и тд.
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer class="footer footer-list" id="footer-room">
+		<div class="footer__wrapper-room">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-12">
+						<div class="wrapper footer__wrapper">
+							<a href="index.html" class="header__logo footer__logo-list">
+								<img src="img/logo-text.png" alt="">
+								<img src="img/logo1.png" alt="">
+							</a>
+							<a href="#" class="footer__confidence footer__confidence-list">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="css/fontawesome-free-5.15.1-web/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

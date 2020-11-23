@@ -1,0 +1,59 @@
+﻿@using BookingHotels.WebUI.Models
+@using BookingHotels.WebUI.HtmlHelpers
+@model HotelsListViewModel
+
+@{
+    ViewBag.Title = "Отели";
+}
+<header class="header header-room" id="header">
+    <div class="wrapper wrapper-room">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-11">
+                    <a href="index.html" class="header__logo header__logo-room">
+                        <img src="~/img/logo-text.png" alt="">
+                        <img src="~/img/logo1.png" alt="">
+                    </a>
+                    <a href="list_of_hotels.html" class="divide__hotels divide__hotels-room">
+                        Гостиницы
+                    </a>
+                    <span class="stick-room">
+                        <i class="fas fa-circle"></i>
+                    </span>
+                    <a href="list_of_services.html" class="divide__services divide__services-room">
+                        Услуги
+                    </a>
+                </div>
+                <div class="col-md-2 col-lg-1">
+                    <a href="room.html" class="header__icon-user">
+                        <img src="~/img/header-man.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="list" id="list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 padding-right-none">
+                <div id="categories" class="col-xs-3">
+                    @Html.Action("Menu", "Nav")
+                </div>
+            </div>
+            <div class="col-md-8 padding-left-none">
+                @foreach (var p in @Model.Hotels)
+                {
+                    @Html.Partial("HotelSummary", p)
+                }
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List_of_hotels",
+      new { page = x, location = Model.CurrentLocation }))
+</div>
